@@ -7,13 +7,15 @@
 body{
     background-color: lightblue;
     font-family: Archivo Narrow;
-    color:red;
+    color:crimson;
 }
 
 .contenedor{
     border:3px solid whitesmoke;
     background-color: darkslategrey;
     margin:8vw;
+    margin-top:2vw;
+    margin-bottom:2vw;
     border-radius: 10px;
     font-size:1.5vw;
     
@@ -37,12 +39,14 @@ hr{
 }
 .carta{
     border:1px solid whitesmoke;
-    margin:0.5vw;
-    width:213px;
-    height:340.8px;
+    margin:1vw;
+    width:200px;
+    height:320px;
     border-radius: 10px;
     display:flex;
+    flex-wrap:nowrap;
     flex-direction:row;
+    box-shadow:10px 10px rgba(0, 0, 0, 0.5) ;
 }
 .corazon{
     background-color:whitesmoke;
@@ -57,16 +61,31 @@ hr{
     display:flex;
     background-color:whitesmoke;
     justify-content: space-between;
-    align-content:space-between;
+    align-items: center;
+    
 }   
  
 .coraCont {
     height: 100%;
     width: 100%;
     display:flex;
+    flex-wrap:nowrap;
     justify-content: space-between;
-    flex-direction: column;
+    align-items: space-between;
+    flex-direction:column;
     padding:1.3vw;
+    
+}
+.coraCont6, .coraCont8{
+    
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-direction:row;
+    padding:1.5vw;
+    flex-wrap: nowrap;
+    
 }
 .coraCont .hcartaReverse{
     transform:rotatez(180deg);
@@ -75,9 +94,27 @@ hr{
 .hcarta, .hcartaReverse{
     font-size:1.5em;
 }
+.cora6, .cora7, .cora8{
+    width: 100%;
+    height: 100%;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: space-between;
+    
+}
+.cora6 .hcartaReverse{
+    
+    transform:rotatez(180deg);
+}
+.cora8 .hcartaReverse{
+    
+    transform:rotatez(180deg);
+}
+.cora6 .hcarta{
+    padding-bottom:2vw;
+}
 
-
-.c1-1, .c2-1, .c3-1, .c4-1{
+.c1-1, .c2-1, .c3-1, .c4-1, .c5-1, .c6-1, .c7-1,.c8-1,.c9-1,.c10-1{
     font-size:15px;
     align-items: center;
     justify-content: center;
@@ -90,7 +127,7 @@ hr{
     align-items: center;
 }
 
-.c1-3, .c2-3, .c3-3, .c4-3{
+.c1-3, .c2-3, .c3-3, .c4-3, .c5-3, .c6-3, .c7-3,.c8-3,.c9-3,.c10-3{
     display:flex;
     flex-direction: column;
     padding:0.5vw;
